@@ -1,0 +1,17 @@
+# stwórz plik w głównym folderze
+cd E:\LocalSites\bedrock-nauka
+```
+
+I stwórz tam `.gitignore` z zawartością:
+```
+conf/
+logs/
+bedrock/vendor/
+bedrock/web/wp/
+bedrock/web/app/uploads/*
+!bedrock/web/app/uploads/.gitkeep
+bedrock/.env
+bedrock/auth.json
+bedrock/web/app/themes/moj-motyw/vendor/
+bedrock/web/app/themes/moj-motyw/node_modules/
+bedrock/web/app/themes/moj-motyw/public/build/
