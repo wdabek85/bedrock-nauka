@@ -1,5 +1,6 @@
 
 import { initMobileMenu } from './components/mobile-menu';
+import { initAccordion } from './components/accordion';
 
 import.meta.glob([
   '../images/**',
@@ -9,4 +10,5 @@ import.meta.glob([
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
+  initAccordion();
 });
