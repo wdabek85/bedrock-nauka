@@ -1,5 +1,5 @@
 {{-- Sekcja Usługi — Strona Główna --}}
-<section class="bg-white py-12 lg:py-4">
+<section class="bg-neutral-200 py-12 lg:py-4">
     <div class="container-own flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] lg:items-center">
 
         {{-- Lewa kolumna: intro --}}

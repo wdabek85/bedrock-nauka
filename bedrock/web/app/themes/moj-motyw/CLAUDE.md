@@ -59,6 +59,7 @@ Zdefiniowane w resources/base/typography.css
 ## Istniejące Composery
 - Hero.php — obsługuje front-page (top-hero, bottom-hero)
 - Services.php — obsługuje front-page (uslugi)
+- Technologies.php — obsługuje front-page (technologie)
 - Portfolio.php — obsługuje front-page, archive-portfolio, page
 
 ## Istniejące sekcje
@@ -66,6 +67,7 @@ Zdefiniowane w resources/base/typography.css
 - sections/hero/top-hero.blade.php
 - sections/hero/bottom-hero.blade.php
 - sections/services/index.blade.php
+- sections/technologies/index.blade.php
 
 ## Sekcja Portfolio (strona główna)
 - **Figma node:** 162:479 (Portfolio/ Strona glowna)
@@ -86,4 +88,14 @@ Zdefiniowane w resources/base/typography.css
   - Ikona: components/icons/chevron.blade.php
 - **Użycie w front-page:** @include('sections.services.index')
 - **ACF:** Grupa `uslugi` → tytul, opis, przycisk_tekst, przycisk_link, lista (repeater: nazwa + opis)
+
+## Sekcja Technologie (strona główna)
+- **Figma node:** 154:332 (Technologie)
+  - Desktop: 154:331 | Mobile: 154:330
+- **Pliki:**
+  - Widok: sections/technologies/index.blade.php (header-section + rząd logo)
+  - Composer: app/View/Composers/Technologies.php (ACF: technologie)
+- **Użycie w front-page:** @include('sections.technologies.index')
+- **ACF:** Grupa `technologie` → tytul (text), podtytul (text), lista (repeater: nazwa text + obrazek image)
+- **Design:** Desktop: 6 obrazków 210x80 w rzędzie, justify-between. Mobile: overflow-x-auto, przewijalne
 - **Design (Figma):** Accordion-style lista z numeracją (01, 02, 03...), pierwszy element rozwinięty (z obrazem 440x250, rounded-10), pozostałe zwinięte. Przycisk ikona strzałki po prawej (biały = rozwinięty, blue-300 = zwinięty). Mobile: elementy kolumnowo, obraz na pełną szerokość.
