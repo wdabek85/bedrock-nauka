@@ -1,5 +1,5 @@
 <div class="bg-primary-400 w-full text-white">
-    <div class="container py-4 flex justify-between items-center">
+    <div class="container-own py-4 flex justify-between items-center">
        <a href="{{ home_url('/') }}" class="text-4xl font-extrabold italic text-white">
             <img src="{{ get_theme_file_uri('resources/images/logoakorn.png') }}" alt="Akorn">
         </a>
