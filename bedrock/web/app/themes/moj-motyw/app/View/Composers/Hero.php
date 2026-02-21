@@ -13,6 +13,8 @@ class Hero extends Composer{
     {
         return [
             'sekcjeHero' => get_field('top-hero') ?: [],
+            'bottomFirst'    => get_field('bottom-hero')['first'] ?? [],
+            'bottomBenefits' => get_field('bottom-hero')['benefits'] ?: [],
         ];
     }
 }

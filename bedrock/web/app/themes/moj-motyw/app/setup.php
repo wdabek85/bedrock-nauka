@@ -153,3 +153,19 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+
+add_action('init', function () {
+    register_post_type('portfolio', [
+        'labels' => [
+            'name' => 'portfolio',
+            'singular_name' => 'Realizacja',
+            'add_new_item' => 'dodaj nowa realizacje'
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'supports' => [ 'title', 'editor', 'thumbnail' ],
+        'menu_icon'    => 'dashicons-portfolio',
+        'rewrite'      => [ 'slug' => 'portfolio' ],
+    ]);
+});
