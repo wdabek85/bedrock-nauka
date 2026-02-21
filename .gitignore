@@ -15,3 +15,4 @@ bedrock/auth.json
 bedrock/web/app/themes/moj-motyw/vendor/
 bedrock/web/app/themes/moj-motyw/node_modules/
 bedrock/web/app/themes/moj-motyw/public/build/
+app/sql/
