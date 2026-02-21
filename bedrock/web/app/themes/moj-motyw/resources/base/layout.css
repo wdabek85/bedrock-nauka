@@ -1,0 +1,15 @@
+@layer components{
+    .container{
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1024px){
+        .container{
+            max-width: 1440px;
+            padding: 0 80px;
+            margin: 0 auto;
+        }
+    }
+}
