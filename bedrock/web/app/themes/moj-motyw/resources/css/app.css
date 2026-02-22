@@ -1,5 +1,8 @@
 @import "tailwindcss" theme(static);
 @import "../base/typography.css";
+@import "../base/layout.css";
+@import "../base/colros.css"
+
 
 
 @source "../views/";
